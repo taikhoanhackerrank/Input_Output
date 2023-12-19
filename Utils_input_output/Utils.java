@@ -17,6 +17,7 @@ public class Utils {
         return idea.toString();
     }
 
+     /** Javadoc */
     public static void writeContentToFile1(String idea, String path) {
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(path));
@@ -26,7 +27,7 @@ public class Utils {
             uet.printStackTrace();
         }
     }
-
+      /** Javadoc */
     public static void writeContentToFile2(String idea, String path) {
         try {
             FileWriter out = new FileWriter(path, true);
@@ -36,7 +37,7 @@ public class Utils {
             uet.printStackTrace();
         }
     }
-
+      /** Javadoc */
     public static File findFileByName(String folderPath, String fileName) {
         File folder = new File(folderPath);
         File[] files = folder.listFiles();
@@ -45,7 +46,7 @@ public class Utils {
                 if (file.getName().equals(fileName)) return file;
         return null;
     }
-
+      /** Javadoc */
     public static void main(String[] args) {
         File file = findFileByName("C:\\Users\\admin\\OneDrive\\Documents\\Try hard '\\OOP\\New folder\\Utils_input_output", "input.txt");
         if (file != null) {
